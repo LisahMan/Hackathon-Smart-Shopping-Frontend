@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+   <LinearLayout
+       android:id="@+id/linLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       >
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="ITEM"
+          android:textSize="20dp"
+          android:gravity="center"
+          android:textStyle="bold"
+          />
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="PRICE"
+          android:textSize="20dp"
+          android:textStyle="bold"
+          android:gravity="center"
+          />
+
+   </LinearLayout>
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_below="@id/linLayout"
+       android:id="@+id/rec_view_order"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       />
+
+   <TextView
+       android:id="@+id/txt_total_bill"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="25dp"
+       android:text="Total bill"
+       android:gravity="center"
+       android:textStyle="bold"
+       android:layout_alignParentBottom="true"
+       android:visibility="gone"
+       android:layout_marginBottom="10dp"
+       />
+
+   <Button
+       android:id="@+id/btn_finish"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/button_design_bold"
+       android:layout_alignParentBottom="true"
+       android:text="Finish"
+       android:visibility="visible"
+       android:layout_marginBottom="10dp"
+       />
+</RelativeLayout>
